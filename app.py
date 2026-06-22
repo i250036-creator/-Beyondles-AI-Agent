@@ -71,7 +71,7 @@ def setup_agent():
     # LLM
     llm = ChatOpenAI(
         model="openai/gpt-oss-120b",
-        openai_api_key=os.environ["OPENROUTER_API_KEY"],
+        openai_api_key=st.secrets["OPENROUTER_API_KEY"],
         openai_api_base="https://openrouter.ai/api/v1",
         temperature=0.2
     )
